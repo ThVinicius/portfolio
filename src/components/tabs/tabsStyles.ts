@@ -11,6 +11,7 @@ const Container = styled.div<TabsProps>`
   padding-bottom: 5px;
   font: normal 400 22px 'Roboto', sans-serif;
   border-bottom: ${props => (props.selected ? 'solid 3px green' : 'none')};
+  color: #fff;
 
   :hover {
     border-bottom: none;

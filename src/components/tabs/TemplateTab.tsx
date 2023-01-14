@@ -1,4 +1,4 @@
-import { Dispatch, FC, SetStateAction, useMemo, useState } from 'react'
+import { Dispatch, FC, SetStateAction, useMemo } from 'react'
 import { Container } from './tabsStyles'
 
 interface Props {
