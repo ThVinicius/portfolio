@@ -4,6 +4,7 @@ import GlobalCSS from './assets/css/Global'
 import Header from './components/header/Header'
 import Home from './pages/home/Home'
 import Background from './components/background/Background'
+import Projects from './pages/projects/Index'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </BrowserRouter>
   )
