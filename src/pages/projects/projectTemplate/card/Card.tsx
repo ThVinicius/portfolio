@@ -1,6 +1,7 @@
 import { FC, useState } from 'react'
-import Face from './Face'
-import { BackFace, Container } from './cardStyle'
+import Face from '../face/Face'
+import BackFace from '../backFace/BackFace'
+import { Container } from './cardStyle'
 
 const Card: FC = () => {
   const [flipCard, setFlipCard] = useState(false)
@@ -14,9 +15,7 @@ const Card: FC = () => {
   return (
     <Container flip={flip()}>
       <Face setFlipCard={setFlipCard} />
-      <BackFace>
-        <h1>Informações detalhadas</h1>
-      </BackFace>
+      <BackFace setFlipCard={setFlipCard} />
     </Container>
   )
 }

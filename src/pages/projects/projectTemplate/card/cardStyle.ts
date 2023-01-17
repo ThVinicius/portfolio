@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Container as Face } from './faceStyle'
 
 interface ContainerProps {
   flip: 'rotateY(0deg)' | 'rotateY(180deg)'
@@ -20,8 +19,4 @@ const Container = styled.div<ContainerProps>`
   }
 `
 
-const BackFace = styled(Face)`
-  transform: rotateY(180deg);
-`
-
-export { Container, BackFace }
+export { Container }

@@ -26,31 +26,19 @@ const Info = styled.div`
   }
 `
 
-const Title = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-
-  h1 {
-    font-family: 'Grotesque Black', sans-serif;
-    font-size: 30px;
-  }
-`
-
 const Details = styled.div`
   width: 100%;
   display: flex;
   justify-content: end;
 
   button {
-    padding: 5px 10px;
+    padding: 1px 10px;
     border: none;
     border-radius: 5px;
     background-color: #288ba8;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     display: flex;
     gap: 7px;
     align-items: center;
@@ -63,12 +51,4 @@ const Details = styled.div`
   }
 `
 
-const Badge = styled.div`
-  width: fit-content;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: red;
-  color: #fff;
-`
-
-export { Container, Details, Info, Title, Badge }
+export { Container, Details, Info }
