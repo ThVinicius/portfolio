@@ -60,32 +60,29 @@ const Build = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
-  }
 
-  img {
-    width: fit-content;
-    height: 30px;
+    img {
+      width: fit-content;
+      height: 30px;
+    }
   }
 `
 
 const DeployBadge = styled.a`
+  width: fit-content;
   padding: 5px;
   border-radius: 7px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #007acc;
-
+  gap: 10px;
   cursor: pointer;
 
   p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #fff;
-  }
-
-  img {
-    width: 40px;
   }
 `
 

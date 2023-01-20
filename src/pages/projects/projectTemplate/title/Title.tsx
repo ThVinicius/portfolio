@@ -1,14 +1,20 @@
 import { FC } from 'react'
 import { Badge, Container } from './titleStyle'
 
-const Title: FC = () => {
+interface IProps {
+  name: string
+  description: string
+  type: 'FullStack' | 'BackEnd' | 'FrontEnd'
+}
+
+const Title: FC<IProps> = ({ name, description, type }) => {
   return (
     <Container>
       <span>
-        <h1>GeekBook</h1>
-        <Badge>FullStack</Badge>
+        <h1>{name}</h1>
+        <Badge>{type}</Badge>
       </span>
-      <h6>Um gerenciador de obras geeks</h6>
+      <h6>{description}</h6>
     </Container>
   )
 }

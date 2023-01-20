@@ -6,14 +6,17 @@ import Title from '../title/Title'
 
 interface IProps {
   setFlipCard: Dispatch<SetStateAction<boolean>>
+  name: string
+  description: string
+  type: 'FullStack' | 'BackEnd' | 'FrontEnd'
 }
 
-const Face: FC<IProps> = ({ setFlipCard }) => {
+const Face: FC<IProps> = ({ setFlipCard, name, description, type }) => {
   return (
     <Container>
       <img src={geekbook} alt="projeto" />
       <Info>
-        <Title />
+        <Title {...{ name, description, type }} />
         <Details>
           <button onClick={() => setFlipCard(true)}>
             Mais detalhes

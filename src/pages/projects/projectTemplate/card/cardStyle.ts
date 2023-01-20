@@ -11,6 +11,7 @@ const Container = styled.div<ContainerProps>`
   transform-style: preserve-3d;
   position: relative;
   transform: ${props => props.flip};
+  box-shadow: 3px 1px 10px 0px rgba(0, 0, 0, 0.75);
 
   img {
     width: 100%;
