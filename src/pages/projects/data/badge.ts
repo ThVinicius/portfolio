@@ -1,4 +1,6 @@
-export const badge = Object.freeze({
+export const badge = {
+  javascript:
+    'https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E',
   react:
     'https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
   postgres:
@@ -11,4 +13,4 @@ export const badge = Object.freeze({
   express:
     'https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express.js&logoColor=white',
   jest: 'https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white'
-})
+}
