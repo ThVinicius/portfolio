@@ -5,7 +5,14 @@ const Container = styled.div`
   height: calc(100vh - 80px);
   padding: 30px;
   overflow-y: auto;
-  z-index: 1;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 `
 
 export { Container }
