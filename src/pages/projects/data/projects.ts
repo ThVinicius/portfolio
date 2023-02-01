@@ -1,10 +1,14 @@
 import { badge } from './badge'
+import geekbook from '../../../assets/images/geekbook.gif'
+import shortly from '../../../assets/images/shortly.gif'
+import repoprovas from '../../../assets/images/repoprovas.gif'
 
 export const projects = [
-  {
+  Object.freeze({
     name: 'GeekBook',
     type: 'FullStack',
     description: 'Um gerenciador de obras geeks',
+    image: geekbook,
     badges: [
       badge.react,
       badge.node,
@@ -21,11 +25,12 @@ export const projects = [
       { ['BackEnd Repo']: 'https://github.com/ThVinicius/geek-book-back-end' }
     ],
     linksDeploy: [{ ['Deploy']: 'http://geek-book.vercel.app/' }]
-  },
-  {
+  }),
+  Object.freeze({
     name: 'Shortly',
     type: 'FullStack',
     description: 'Um encurtador de links',
+    image: shortly,
     badges: [
       badge.javascript,
       badge.react,
@@ -41,11 +46,12 @@ export const projects = [
       { ['BackEnd Repo']: 'https://github.com/ThVinicius/shortly-back-end' }
     ],
     linksDeploy: [{ ['Deploy']: 'https://shortly.fly.dev/' }]
-  },
-  {
+  }),
+  Object.freeze({
     name: 'RepoProvas',
     type: 'FullStack',
     description: 'Um sistema de compartilhamento de provas entre estudantes',
+    image: repoprovas,
     badges: [
       badge.react,
       badge.node,
@@ -64,5 +70,5 @@ export const projects = [
     linksDeploy: [
       { ['Deploy']: 'http://repo-provas-front-end-lake.vercel.app/' }
     ]
-  }
+  })
 ]
