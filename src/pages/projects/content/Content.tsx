@@ -8,11 +8,19 @@ const Content: FC = () => {
     <Container>
       {projects.map(
         (
-          { name, description, type, badges, linksRepo, linksDeploy },
+          { name, description, image, type, badges, linksRepo, linksDeploy },
           index
         ) => (
           <Card
-            {...{ name, description, badges, type, linksDeploy, linksRepo }}
+            {...{
+              name,
+              description,
+              image,
+              badges,
+              type,
+              linksDeploy,
+              linksRepo
+            }}
             key={index}
           />
         )

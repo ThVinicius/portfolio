@@ -7,6 +7,7 @@ import { Container } from './cardStyle'
 interface IProps {
   name: string
   description: string
+  image: string
   type: 'FullStack' | 'BackEnd' | 'FrontEnd'
   badges: string[]
   linksRepo: ILinkRepo[]
@@ -16,6 +17,7 @@ interface IProps {
 const Card: FC<IProps> = ({
   name,
   description,
+  image,
   type,
   badges,
   linksRepo,
@@ -31,7 +33,7 @@ const Card: FC<IProps> = ({
 
   return (
     <Container flip={flip()}>
-      <Face {...{ setFlipCard, name, description, type }} />
+      <Face {...{ setFlipCard, name, description, image, type }} />
       <BackFace
         {...{
           setFlipCard,
