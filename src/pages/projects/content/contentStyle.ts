@@ -10,9 +10,9 @@ const Container = styled.div`
   left: 0;
   z-index: 2;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 75px 0;
 `
 
 export { Container }
