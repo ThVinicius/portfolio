@@ -2,6 +2,7 @@ import { badge } from './badge'
 import geekbook from '../../../assets/images/geekbook.gif'
 import shortly from '../../../assets/images/shortly.gif'
 import repoprovas from '../../../assets/images/repoprovas.gif'
+import api from '../../../assets/images/api.jpeg'
 
 export const projects = [
   Object.freeze({
@@ -70,5 +71,17 @@ export const projects = [
     linksDeploy: [
       { ['Deploy']: 'http://repo-provas-front-end-lake.vercel.app/' }
     ]
+  }),
+  Object.freeze({
+    name: 'Tweteroo',
+    type: 'BackEnd',
+    description:
+      'Uma rest api simples onde se simula um chat. feito com Spring Boot',
+    image: api,
+    badges: [badge.java, badge.spring],
+    linksRepo: [
+      { ['BackEnd Repo']: 'https://github.com/ThVinicius/tweteroo-spring' }
+    ],
+    linksDeploy: [{ ['Deploy']: 'https://tweteroo-spring.onrender.com/' }]
   })
 ]
