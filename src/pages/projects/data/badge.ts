@@ -12,5 +12,8 @@ export const badge = {
   node: 'https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white',
   express:
     'https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express.js&logoColor=white',
-  jest: 'https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white'
+  jest: 'https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white',
+  java: 'https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white',
+  spring:
+    'https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white'
 }
