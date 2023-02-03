@@ -11,7 +11,7 @@ interface IProps {
   type: 'FullStack' | 'BackEnd' | 'FrontEnd'
   badges: string[]
   linksRepo: ILinkRepo[]
-  linksDeploy: ILinkDeploy[]
+  linksDeploy?: ILinkDeploy[]
 }
 
 const Card: FC<IProps> = ({

@@ -13,7 +13,7 @@ interface IProps {
   type: 'FullStack' | 'BackEnd' | 'FrontEnd'
   badges: string[]
   linksRepo: ILinkRepo[]
-  linksDeploy: ILinkDeploy[]
+  linksDeploy?: ILinkDeploy[]
 }
 
 const BackFace: FC<IProps> = ({
@@ -49,7 +49,7 @@ const BackFace: FC<IProps> = ({
             {linksRepo.map((link, index) => (
               <LinkRepo link={link} key={index} />
             ))}
-            {linksDeploy.map((link, index) => (
+            {linksDeploy?.map((link, index) => (
               <LinkDeploy link={link} key={index} />
             ))}
           </span>
