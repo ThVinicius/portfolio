@@ -13,6 +13,8 @@ export const badge = {
   express:
     'https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express.js&logoColor=white',
   jest: 'https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white',
+  cypress:
+    'https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e',
   java: 'https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white',
   spring:
     'https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white'
