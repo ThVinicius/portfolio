@@ -2,6 +2,7 @@ import { badge } from './badge'
 import geekbook from '../../../assets/images/geekbook.gif'
 import shortly from '../../../assets/images/shortly.gif'
 import repoprovas from '../../../assets/images/repoprovas.gif'
+import sharenergy from '../../../assets/images/desafio-sharenergy.gif'
 import api from '../../../assets/images/api.jpeg'
 
 export const projects = [
@@ -83,5 +84,28 @@ export const projects = [
       { ['BackEnd Repo']: 'https://github.com/ThVinicius/tweteroo-spring' }
     ],
     linksDeploy: [{ ['Deploy']: 'https://tweteroo-spring.onrender.com/' }]
+  }),
+  Object.freeze({
+    name: 'Desafio técnico Sharenergy',
+    type: 'FullStack',
+    description:
+      'Desafio técnico feito feito durante o processo seletivo da Sharenergy',
+    image: sharenergy,
+    badges: [
+      badge.react,
+      badge.node,
+      badge.express,
+      badge.typescript,
+      badge.postgres,
+      badge.prisma,
+      badge.jest,
+      badge.cypress
+    ],
+    linksRepo: [
+      {
+        ['Repo GitHub']:
+          'https://github.com/ThVinicius/desafio-sharenergy-2023-01/tree/vinicius-pacheco-dos-santos'
+      }
+    ]
   })
 ]
