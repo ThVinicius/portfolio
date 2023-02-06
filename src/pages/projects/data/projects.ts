@@ -4,6 +4,7 @@ import shortly from '../../../assets/images/shortly.gif'
 import repoprovas from '../../../assets/images/repoprovas.gif'
 import sharenergy from '../../../assets/images/desafio-sharenergy.gif'
 import beuni from '../../../assets/images/beuni.gif'
+import trackit from '../../../assets/images/trackit.gif'
 import api from '../../../assets/images/api.jpeg'
 
 export const projects = [
@@ -141,6 +142,21 @@ export const projects = [
         ['Deploy BackEnd']:
           'https://desafio-beuni-back-end-production.up.railway.app/'
       }
+    ]
+  }),
+  Object.freeze({
+    name: 'Trackit',
+    type: 'FrontEnd',
+    description: 'Uma aplicação de acompanhamento de hábitos.',
+    image: trackit,
+    badges: [badge.react],
+    linksRepo: [
+      {
+        ['FrontEnd Repo']: 'https://github.com/ThVinicius/TrackIt'
+      }
+    ],
+    linksDeploy: [
+      { ['Deploy FrontEnd']: 'https://track-it-thvinicius.vercel.app/' }
     ]
   })
 ]
