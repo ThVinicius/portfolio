@@ -5,6 +5,7 @@ import repoprovas from '../../../assets/images/repoprovas.gif'
 import sharenergy from '../../../assets/images/desafio-sharenergy.gif'
 import beuni from '../../../assets/images/beuni.gif'
 import trackit from '../../../assets/images/trackit.gif'
+import drivenPass from '../../../assets/images/driven-pass.gif'
 import api from '../../../assets/images/api.jpeg'
 
 export const projects = [
@@ -158,5 +159,28 @@ export const projects = [
     linksDeploy: [
       { ['Deploy FrontEnd']: 'https://track-it-thvinicius.vercel.app/' }
     ]
+  }),
+  Object.freeze({
+    name: 'Driven Pass',
+    type: 'FullStack',
+    description: 'Driven Pass é um gerenciador de senhas',
+    image: drivenPass,
+    badges: [
+      badge.react,
+      badge.node,
+      badge.express,
+      badge.typescript,
+      badge.postgres,
+      badge.prisma
+    ],
+    linksRepo: [
+      {
+        ['FrontEnd Repo']: 'https://github.com/ThVinicius/driven-pass-front-end'
+      },
+      {
+        ['BackEnd Repo']: 'https://github.com/ThVinicius/driven-pass-back-end'
+      }
+    ],
+    linksDeploy: [{ ['Deploy FrontEnd']: 'http://driven-pass-rho.vercel.app/' }]
   })
 ]
