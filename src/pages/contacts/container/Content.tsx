@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import Contacts from '../contacts/Contacts'
+import Contacts from '../components/contacts/Contacts'
 import { Container } from './contentStyle'
 
 const Content: FC = () => {
