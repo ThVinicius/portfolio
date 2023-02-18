@@ -7,6 +7,7 @@ const Container = styled.div`
   position: absolute;
   top: 80px;
   left: 0;
+  display: flex;
 `
 
 export { Container }
