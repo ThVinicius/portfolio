@@ -6,10 +6,14 @@ const Container = styled.div`
   height: calc(100vh - 80px);
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
 `
 
 const Label = styled.div`
-  width: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,6 +51,14 @@ const Label = styled.div`
       border-color: orange;
     }
   }
+
+  @media (max-width: 420px) {
+    h1,
+    h2 {
+      text-align: center;
+      font-size: 25px;
+    }
+  }
 `
 
 const Box = styled.div`
@@ -56,6 +68,11 @@ const Box = styled.div`
   justify-content: end;
   align-items: flex-end;
   padding-bottom: 20px;
+
+  @media (max-width: 420px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const Image = styled.img`
@@ -63,6 +80,11 @@ const Image = styled.img`
   height: 400px;
   border-radius: 86% 14% 50% 50% / 87% 72% 28% 13%;
   z-index: 1;
+
+  @media (max-width: 420px) {
+    width: 270px;
+    height: 200px;
+  }
 `
 
 const Button = styled.button`
