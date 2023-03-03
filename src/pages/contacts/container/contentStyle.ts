@@ -8,6 +8,13 @@ const Container = styled.div`
   top: 80px;
   left: 0;
   display: flex;
+  overflow-y: auto;
+
+  @media (max-width: 420px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
 `
 
 export { Container }

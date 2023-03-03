@@ -11,6 +11,10 @@ const Container = styled.form`
     font: normal 400 18px 'Roboto', sans-serif;
     padding-left: 9px;
   }
+
+  @media (max-width: 420px) {
+    width: 100%;
+  }
 `
 
 const Box = styled.div`
