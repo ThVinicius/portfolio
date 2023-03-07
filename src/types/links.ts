@@ -1,8 +1,7 @@
 export interface ILinkRepo {
   'FrontEnd Repo'?: string
   'BackEnd Repo'?: string
+  'Repo GitHub'?: string
 }
 
-export interface ILinkDeploy {
-  Deploy: string
-}
+export type ILinkDeploy = any

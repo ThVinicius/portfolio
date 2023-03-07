@@ -8,7 +8,7 @@ interface IProps {
   name: string
   description: string
   image: string
-  type: 'FullStack' | 'BackEnd' | 'FrontEnd'
+  type: string
   badges: string[]
   linksRepo: ILinkRepo[]
   linksDeploy?: ILinkDeploy[]

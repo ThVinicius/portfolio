@@ -4,7 +4,7 @@ import { Badge, Container } from './titleStyle'
 interface IProps {
   name: string
   description: string
-  type: 'FullStack' | 'BackEnd' | 'FrontEnd'
+  type: string
 }
 
 const Title: FC<IProps> = ({ name, description, type }) => {

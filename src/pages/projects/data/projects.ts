@@ -9,7 +9,7 @@ import drivenPass from '../../../assets/images/driven-pass.gif'
 import api from '../../../assets/images/api.jpeg'
 
 export const projects = [
-  Object.freeze({
+  {
     name: 'GeekBook',
     type: 'FullStack',
     description: 'Um gerenciador de obras geeks',
@@ -30,8 +30,8 @@ export const projects = [
       { ['BackEnd Repo']: 'https://github.com/ThVinicius/geek-book-back-end' }
     ],
     linksDeploy: [{ ['Deploy']: 'http://geek-book.vercel.app/' }]
-  }),
-  Object.freeze({
+  },
+  {
     name: 'Shortly',
     type: 'FullStack',
     description: 'Um encurtador de links',
@@ -51,8 +51,8 @@ export const projects = [
       { ['BackEnd Repo']: 'https://github.com/ThVinicius/shortly-back-end' }
     ],
     linksDeploy: [{ ['Deploy']: 'https://shortly.fly.dev/' }]
-  }),
-  Object.freeze({
+  },
+  {
     name: 'RepoProvas',
     type: 'FullStack',
     description: 'Um sistema de compartilhamento de provas entre estudantes',
@@ -75,8 +75,8 @@ export const projects = [
     linksDeploy: [
       { ['Deploy']: 'http://repo-provas-front-end-lake.vercel.app/' }
     ]
-  }),
-  Object.freeze({
+  },
+  {
     name: 'Tweteroo',
     type: 'BackEnd',
     description:
@@ -87,8 +87,8 @@ export const projects = [
       { ['BackEnd Repo']: 'https://github.com/ThVinicius/tweteroo-spring' }
     ],
     linksDeploy: [{ ['Deploy']: 'https://tweteroo-spring.onrender.com/' }]
-  }),
-  Object.freeze({
+  },
+  {
     name: 'Desafio técnico Sharenergy',
     type: 'FullStack',
     description:
@@ -111,8 +111,8 @@ export const projects = [
           'https://github.com/ThVinicius/desafio-sharenergy-2023-01/tree/vinicius-pacheco-dos-santos'
       }
     ]
-  }),
-  Object.freeze({
+  },
+  {
     name: 'Desafio BeUni',
     type: 'FullStack',
     description:
@@ -144,8 +144,8 @@ export const projects = [
           'https://desafio-beuni-back-end-production.up.railway.app/'
       }
     ]
-  }),
-  Object.freeze({
+  },
+  {
     name: 'Trackit',
     type: 'FrontEnd',
     description: 'Uma aplicação de acompanhamento de hábitos.',
@@ -159,8 +159,8 @@ export const projects = [
     linksDeploy: [
       { ['Deploy FrontEnd']: 'https://track-it-thvinicius.vercel.app/' }
     ]
-  }),
-  Object.freeze({
+  },
+  {
     name: 'Driven Pass',
     type: 'FullStack',
     description: 'Driven Pass é um gerenciador de senhas',
@@ -182,5 +182,5 @@ export const projects = [
       }
     ],
     linksDeploy: [{ ['Deploy FrontEnd']: 'http://driven-pass-rho.vercel.app/' }]
-  })
+  }
 ]

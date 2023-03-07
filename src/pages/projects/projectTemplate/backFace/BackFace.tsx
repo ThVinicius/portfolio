@@ -10,7 +10,7 @@ interface IProps {
   setFlipCard: Dispatch<SetStateAction<boolean>>
   name: string
   description: string
-  type: 'FullStack' | 'BackEnd' | 'FrontEnd'
+  type: string
   badges: string[]
   linksRepo: ILinkRepo[]
   linksDeploy?: ILinkDeploy[]
