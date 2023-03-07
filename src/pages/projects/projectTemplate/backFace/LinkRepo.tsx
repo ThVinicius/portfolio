@@ -9,7 +9,7 @@ interface IProps {
 
 const LinkRepo: FC<IProps> = ({ link }) => {
   const key = Object.keys(link)[0]
-  const value = Object.values(link)[0]
+  const value = Object.values(link)[0] as string
 
   return (
     <GithubBadge href={value} target="_blank">

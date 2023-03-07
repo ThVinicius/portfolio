@@ -9,7 +9,7 @@ interface IProps {
 
 const LinkDeploy: FC<IProps> = ({ link }) => {
   const key = Object.keys(link)[0]
-  const value = Object.values(link)[0]
+  const value = Object.values(link)[0] as string
 
   return (
     <DeployBadge href={value} target="_blank">
