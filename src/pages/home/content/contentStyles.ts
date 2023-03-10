@@ -7,7 +7,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 420px) {
+  @media (max-width: 720px) {
     flex-direction: column;
   }
 `
@@ -52,6 +52,14 @@ const Label = styled.div`
     }
   }
 
+  @media (max-width: 1140px) {
+    h1,
+    h2 {
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+
   @media (max-width: 420px) {
     h1,
     h2 {
@@ -80,6 +88,16 @@ const Image = styled.img`
   height: 400px;
   border-radius: 86% 14% 50% 50% / 87% 72% 28% 13%;
   z-index: 1;
+
+  @media (max-width: 1310px) {
+    width: 450px;
+    height: 300px;
+  }
+
+  @media (max-width: 1220px) {
+    width: 370px;
+    height: 250px;
+  }
 
   @media (max-width: 420px) {
     width: 270px;
