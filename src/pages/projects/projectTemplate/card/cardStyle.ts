@@ -12,11 +12,12 @@ const Container = styled.div<ContainerProps>`
   position: relative;
   transform: ${props => props.flip};
   box-shadow: 3px 1px 10px 0px rgba(0, 0, 0, 0.75);
+  border: 3px solid #2e0854;
+  border-radius: 5px;
 
   img {
     width: 100%;
     height: 70%;
-    border-radius: 5px 5px 0 0;
   }
 `
 
