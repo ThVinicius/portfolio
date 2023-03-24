@@ -6,6 +6,7 @@ import sharenergy from '../../../assets/images/desafio-sharenergy.gif'
 import beuni from '../../../assets/images/beuni.gif'
 import trackit from '../../../assets/images/trackit.gif'
 import drivenPass from '../../../assets/images/driven-pass.gif'
+import myWallet from '../../../assets/images/mywallet.gif'
 import api from '../../../assets/images/api.jpeg'
 
 export const projects = [
@@ -182,5 +183,19 @@ export const projects = [
       }
     ],
     linksDeploy: [{ ['Deploy FrontEnd']: 'http://driven-pass-rho.vercel.app/' }]
+  },
+  {
+    name: 'MyWallet',
+    type: 'FullStack',
+    description: 'Uma carteira virtual',
+    image: myWallet,
+    badges: [badge.react, badge.node, badge.express, badge.mongo],
+    linksRepo: [
+      {
+        ['FrontEnd Repo']: 'https://github.com/ThVinicius/myWallet-frontEnd'
+      },
+      { ['BackEnd Repo']: 'https://github.com/ThVinicius/myWallet-backEnd' }
+    ],
+    linksDeploy: [{ ['Deploy']: 'https://mywallet-thvinicius.vercel.app/' }]
   }
 ]
