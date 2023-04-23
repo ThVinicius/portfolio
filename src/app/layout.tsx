@@ -1,3 +1,5 @@
+import { Background } from 'components/background/Background'
+
 export const metadata = {
   title: 'Vinicius Pacheco',
   description:
@@ -11,7 +13,10 @@ interface IProps {
 export default function RootLayout({ children }: IProps) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <Background />
+        {children}
+      </body>
     </html>
   )
 }
