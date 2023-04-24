@@ -2,6 +2,7 @@ import '../assets/css/reset.scss'
 import '../assets/css/global.scss'
 
 import { Background } from 'components/background/Background'
+import Header from 'components/header/Header'
 
 export const metadata = {
   title: 'Vinicius Pacheco',
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: IProps) {
     <html lang="pt-BR">
       <body>
         <Background />
+        <Header />
         {children}
       </body>
     </html>
