@@ -1,3 +1,6 @@
+import '../assets/css/reset.scss'
+import '../assets/css/global.scss'
+
 import { Background } from 'components/background/Background'
 
 export const metadata = {
