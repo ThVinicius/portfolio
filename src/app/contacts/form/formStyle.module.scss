@@ -40,6 +40,10 @@
   font: normal 400 18px 'Roboto', sans-serif;
   background-color: green;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .title{

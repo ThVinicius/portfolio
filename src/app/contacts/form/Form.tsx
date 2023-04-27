@@ -2,6 +2,10 @@
 
 import { ChangeEvent, FC, FormEvent, useReducer, useRef } from 'react'
 
+import { useSendEmail } from 'hooks/useSendEmail'
+
+import { ButtonLoading } from 'components/buttonLoading/ButtonLoading'
+
 import { formReducer } from './formReducer'
 import S from './formStyle.module.scss'
 import { initialState } from './initialFormState'
@@ -9,6 +13,7 @@ import { initialState } from './initialFormState'
 export const Form: FC = () => {
   const formRef = useRef<HTMLFormElement>(null)
   const [formState, dispatch] = useReducer(formReducer, initialState)
+  const { sendEmail, loading } = useSendEmail(dispatch)
 
   const handleChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -19,6 +24,8 @@ export const Form: FC = () => {
 
   const submit = (event: FormEvent) => {
     event.preventDefault()
+
+    sendEmail(formRef.current as HTMLFormElement)
   }
 
   return (
@@ -30,6 +37,7 @@ export const Form: FC = () => {
           type="text"
           name="fromName"
           placeholder="Nome"
+          disabled={loading}
           required
           value={formState.fromName}
           onChange={handleChange}
@@ -39,6 +47,7 @@ export const Form: FC = () => {
           type="email"
           name="fromEmail"
           placeholder="Email"
+          disabled={loading}
           required
           value={formState.fromEmail}
           onChange={handleChange}
@@ -49,6 +58,7 @@ export const Form: FC = () => {
         type="text"
         name="subject"
         placeholder="Título da mensagem"
+        disabled={loading}
         required
         value={formState.subject}
         onChange={handleChange}
@@ -57,13 +67,16 @@ export const Form: FC = () => {
         className={S['text-area']}
         name="message"
         placeholder="Mensagem"
+        disabled={loading}
         required
         value={formState.message}
         onChange={handleChange}
       />
-      <button className={S.button} type="submit">
-        Enviar Mensagem
-      </button>
+      <ButtonLoading
+        name="Enviar Mensagem"
+        className={S.button}
+        loading={loading}
+      />
     </form>
   )
 }
