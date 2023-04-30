@@ -2,7 +2,7 @@
 
 import { ChangeEvent, FC, FormEvent, useReducer, useRef } from 'react'
 
-import { useSendEmail } from 'hooks/useSendEmail'
+import { useSendEmail } from 'app/contacts/hooks/useSendEmail'
 
 import { ButtonLoading } from 'components/buttonLoading/ButtonLoading'
 

@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser'
 
 import { toastProps } from 'utils/toastProps'
 
-import { IFormAction } from '../app/contacts/form/initialFormState'
+import { IFormAction } from '../form/initialFormState'
 
 export function useSendEmail(dispatch: Dispatch<IFormAction>) {
   const [loading, setLoading] = useState(false)
