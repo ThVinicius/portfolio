@@ -24,6 +24,7 @@ model Projects  {
   type          ProjectType
   description   String
   image         String
+  position      Int?            @unique
   ProjectBadges ProjectBadges[]
   Links         Links[]
 
@@ -60,5 +61,6 @@ enum ProjectType {
 enum LinkLabel {
   FrontEnd_Repo @map("FrontEnd Repo")
   BackEnd_Repo  @map("BackEnd Repo")
+  GitHub_Repo   @map("GitHub Repo")
   Deploy
 }
