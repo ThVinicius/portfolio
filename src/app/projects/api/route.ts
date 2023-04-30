@@ -17,6 +17,7 @@ export async function GET() {
          JOIN badges b ON b."name" = pb.badge_name
          GROUP BY pb.project_id) AS tb 
     ON tb.project_id = p.id
+    ORDER BY p."position"
   `
 
   return NextResponse.json(projects)
