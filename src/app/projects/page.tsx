@@ -6,7 +6,7 @@ import S from './projects.module.scss'
 async function getProjects(): Promise<IProject[]> {
   const projects = await fetch('http://localhost:3000/projects/api')
 
-  return projects.json()
+  return await projects.json()
 }
 
 export default async function Projects() {
