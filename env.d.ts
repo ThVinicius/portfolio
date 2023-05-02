@@ -3,5 +3,6 @@ namespace NodeJS {
     NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: string
     NEXT_PUBLIC_EMAILJS_SERVICE_ID: string
     NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: string
+    API_BASE_URL: string
   }
 }
