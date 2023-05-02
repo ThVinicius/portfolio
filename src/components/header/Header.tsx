@@ -1,12 +1,13 @@
 import { FC } from 'react'
+
 import Tabs from '../tabs/Tabs'
-import { Container } from './headerStyles'
+import S from './headerStyles.module.scss'
 
 const Header: FC = () => {
   return (
-    <Container>
+    <header className={S.container}>
       <Tabs />
-    </Container>
+    </header>
   )
 }
 

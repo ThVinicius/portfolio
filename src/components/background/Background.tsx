@@ -1,9 +1,10 @@
 import { FC } from 'react'
-import { Container } from './backgroundStyle'
 
-const Background: FC = () => {
+import S from './backgroundStyle.module.scss'
+
+export const Background: FC = () => {
   return (
-    <Container>
+    <ul className={S.background}>
       <li></li>
       <li></li>
       <li></li>
@@ -14,8 +15,6 @@ const Background: FC = () => {
       <li></li>
       <li></li>
       <li></li>
-    </Container>
+    </ul>
   )
 }
-
-export default Background
