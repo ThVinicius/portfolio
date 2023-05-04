@@ -19,6 +19,13 @@ const Content: FC = () => {
         >
           <button className={S.button}>Download CV</button>
         </Link>
+        <Image
+          src="https://skillicons.dev/icons?i=js,ts,react,nextjs,angular,nodejs,nestjs,java,spring&theme=light"
+          alt="tecnologias"
+          width={0}
+          height={0}
+          className={S['techs-images']}
+        />
       </div>
       <div className={S.box}>
         <Image className={S.image} src={dev} alt="dev gif" />
