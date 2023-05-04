@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true
   },
   images: {
-    domains: ['img.shields.io', 'imgcloud.com.br'],
+    domains: ['img.shields.io', 'imgcloud.com.br', 'skillicons.dev'],
     dangerouslyAllowSVG: true
   }
 }
